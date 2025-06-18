@@ -4,14 +4,14 @@ const edge = require('selenium-webdriver/edge');
 
 (async () => {
   const eyes = new Eyes();
-  eyes.setApiKey('CgrkDXetw7r659sH7HIJkiF2QNk273LNUMGIMIfR7h0110'); // API Key
+  eyes.setApiKey(''); // API Key
 
   let options = new edge.Options();
 
   let driver = new Builder().forBrowser('MicrosoftEdge').setEdgeOptions(options).build();
 
     try {
-    await driver.get('https://f1std5-demo9009-o2c.thailanderp.com/Sales/SaleOrderCRMND1.aspx');
+    await driver.get(''); // Web PATH
     
     // 1. กรอก Username
     await driver.findElement(By.id('txtUsername')).sendKeys('YOUR_USERNAME');
